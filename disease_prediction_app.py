@@ -203,9 +203,11 @@ def train_model():
 
     # Simulate realistic Pima Indians Diabetes dataset distributions
     pregnancies = np.random.poisson(3.8, n).clip(0, 17)
-    glucose_neg = np.random.normal(109, 26, int(n * 0.65))
-    glucose_pos = np.random.normal(141, 31, int(n * 0.35))
-    glucose = np.concatenate([glucose_neg, glucose_pos])[:n].clip(44, 199)
+    glucose = np.where(
+        np.random.rand(n) < 0.65,
+        np.random.normal(109, 26, n),
+        np.random.normal(141, 31, n)
+    ).clip(44, 199)
     bp = np.random.normal(69, 19, n).clip(24, 122)
     skin = np.random.exponential(20, n).clip(7, 99)
     insulin = np.random.exponential(79, n).clip(14, 846)
