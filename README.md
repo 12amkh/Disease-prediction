@@ -114,7 +114,7 @@ This tool is for **educational and portfolio purposes only**. It is not a substi
 ## 👨‍💻 Author
 
 Built by ! - 12amkh— Intelligent Systems Engineering Student  
-[LinkedIn](#) · [GitHub](#) · [Portfolio](#)
+
 
 ---
 
