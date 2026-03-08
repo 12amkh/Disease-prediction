@@ -34,7 +34,7 @@ An end-to-end machine learning web application that predicts diabetes risk using
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/diabetes-prediction-ai.git
+git clone https://github.com/12amkh/diabetes-prediction-ai.git
 cd diabetes-prediction-ai
 ```
 
